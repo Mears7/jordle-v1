@@ -49,9 +49,15 @@
   .help-content {
 		max-width: 600px;
 		margin: 10vh auto;
-    padding: 3em;
+    padding: 1em;
     background: rgba(0,0,0,0.9);
   }
+
+	@media only screen and (min-width: 800px) {
+		.help-content {
+			padding: 3em;
+		}
+	}
 
 	h2 {
 		font-size: 2em;

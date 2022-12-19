@@ -23,9 +23,10 @@
 	}
 
 	.start {
-		font-size: 2.4em;
+		font-size: 1.5em;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
+		text-shadow: 0 0 1em var(--color-theme-1);
 	}
 
   .intro-bg {
@@ -52,7 +53,8 @@
 		margin-top: 10vh;
 		font-weight: 900;
 		text-transform: uppercase;
-		letter-spacing: 0.3em;
+		letter-spacing: -0.1em;
+		font-style: italic;
 		font-size: 2.5em;
 	}
 

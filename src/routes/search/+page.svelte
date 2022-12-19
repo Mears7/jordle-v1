@@ -9,10 +9,7 @@
 </svelte:head>
 
 <section>
-	<div class="search">
 		<Search></Search>
-	</div>
-
 	<ListItems></ListItems>
 </section>
 
@@ -21,10 +18,5 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		flex: 0.6;
-	}
-
-	.search {
-		margin: 3em 0;
 	}
 </style>

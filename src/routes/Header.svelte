@@ -44,8 +44,16 @@
 	.logo a {
 		color: var(--color-text);
 		font-size: 1.2em;
-		font-weight: 700;
 		text-decoration: none;
+		font-weight: 900;
+		text-transform: uppercase;
+		letter-spacing: -0.1em;
+		font-style: italic;
+		transition: 0.2s ease;
+	}
+
+	.logo a:hover {
+		text-shadow: 0 0 1em var(--color-theme-1);
 	}
 
 	nav {
@@ -99,5 +107,6 @@
 
 	a:hover {
 		color: var(--color-theme-1);
+		text-shadow: 0 0 1em var(--color-theme-1);
 	}
 </style>
