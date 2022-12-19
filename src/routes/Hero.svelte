@@ -19,6 +19,7 @@
 		text-align: center;
 		position: relative;
 		z-index: 2;
+		overflow-y: hidden;
 	}
 
 	.start {
@@ -52,9 +53,14 @@
 		font-weight: 900;
 		text-transform: uppercase;
 		letter-spacing: 0.3em;
-		font-size: 5vw;
+		font-size: 2.5em;
 	}
 
+	@media only screen and (min-width: 800px) {
+		.intro-title {
+			font-size: 8vw;
+		}
+	}
 
 	/* Glitch */
 	.layers {

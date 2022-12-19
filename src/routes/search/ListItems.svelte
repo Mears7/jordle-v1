@@ -21,7 +21,6 @@
     margin: 3px;
     background-color: var(--color-bg-2);
     transition: 0.2s ease;
-    font-size: 1.5em;
     border-radius: 3px;
     
   }
@@ -29,5 +28,11 @@
   li:hover {
     background-color: var(--color-theme-2);
     color: var(--color-text);
+  }
+
+  @media only screen and (min-width: 800px) {
+    li {
+      font-size: 1.5em;
+    }
   }
 </style>

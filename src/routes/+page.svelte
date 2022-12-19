@@ -4,8 +4,8 @@
 </script>
 
 <svelte:head>
-	<title>How to play Jordle</title>
-	<meta name="description" content="How to play Jordle" />
+	<title>Jordle</title>
+	<meta name="description" content="Jordle" />
 </svelte:head>
 
 <Hero />
