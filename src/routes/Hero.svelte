@@ -14,25 +14,23 @@
 </section>
 
 <style>
-  section.intro {
+  .intro {
 		min-height: 100vh;
+		max-width: 100%;
 		text-align: center;
 		position: relative;
 		z-index: 2;
-		overflow-y: hidden;
 	}
 
-	.start {
-		font-size: 1.5em;
-		text-transform: uppercase;
-		letter-spacing: 0.1em;
-		text-shadow: 0 0 1em var(--color-theme-1);
+	.intro-content {
+		overflow: hidden;
+		position: relative;
 	}
 
   .intro-bg {
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     top: 0;
     left: 0;
     overflow: hidden;
@@ -48,6 +46,13 @@
 		object-fit: cover;
 	}
 
+	.start {
+		font-size: 1.5em;
+		text-transform: uppercase;
+		letter-spacing: 0.1em;
+		text-shadow: 0 0 1em var(--color-theme-1);
+	}
+
 	/* Intro Title */
 	.intro-title {
 		margin-top: 10vh;
@@ -55,7 +60,8 @@
 		text-transform: uppercase;
 		letter-spacing: -0.1em;
 		font-style: italic;
-		font-size: 2.5em;
+		font-size: 3.5em;
+		filter: blur(1px);
 	}
 
 	@media only screen and (min-width: 800px) {
@@ -477,31 +483,31 @@
 	@keyframes font {
 		0% {
 			font-weight: 100;
-			color: #e0287d;
+			color: var(--color-theme-2);
 			filter: blur(3px);
 		}
 
 		20% {
 			font-weight: 500;
-			color: #fff;
+			color: var(--color-text);
 			filter: blur(0);
 		}
 
 		50% {
 			font-weight: 300;
-			color: #1bc7fb;
+			color: var(--color-theme-1);
 			filter: blur(2px);
 		}
 
 		60% {
 			font-weight: 700;
-			color: #fff;
+			color: var(--color-text);
 			filter: blur(0);
 		}
 
 		90% {
 			font-weight: 500;
-			color: #e0287d;
+			color: var(--color-theme-2);
 			filter: blur(6px);
 		}
 	}
