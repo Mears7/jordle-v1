@@ -37,6 +37,8 @@
       impossible to cheat. It uses <code>&lt;form&gt;</code> and cookies to submit data, meaning you can
       even play with JavaScript disabled!
     </p>
+
+		<a href="/jordle">Play here.</a>
   </div>
 </section>
 
@@ -51,6 +53,7 @@
 		margin: 10vh auto;
     padding: 1em;
     background: rgba(0,0,0,0.9);
+		border-radius: 3px;
   }
 
 	@media only screen and (min-width: 800px) {
@@ -60,7 +63,9 @@
 	}
 
 	h2 {
+		font-weight: 900;
 		font-size: 2em;
+		margin: 0 0 1em 0;
 	}
 
 	span {

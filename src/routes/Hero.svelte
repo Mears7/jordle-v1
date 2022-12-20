@@ -8,8 +8,8 @@
 
 <section class="intro">
 	<div class="intro-content">
-		<h1 class="intro-title glitch layers" data-text="JORDLE"><span>JORDLE</span></h1>
-		<a href="/jordle" class="start">Start</a>
+		<a href="/jordle" class="intro-title glitch layers" data-text="JORDLE"><span>JORDLE</span></a> <br />
+		<a href="/jordle" class="start">Serenity Now</a>
 	</div>
 </section>
 
@@ -25,6 +25,7 @@
 	.intro-content {
 		overflow: hidden;
 		position: relative;
+		padding-top: 15vh;
 	}
 
   .intro-bg {
@@ -62,6 +63,7 @@
 		font-style: italic;
 		font-size: 3.5em;
 		filter: blur(1px);
+		color: var(--color-text);
 	}
 
 	@media only screen and (min-width: 800px) {
