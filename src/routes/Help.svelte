@@ -51,7 +51,7 @@
   .help-content {
 		max-width: 600px;
 		margin: 0 auto;
-    padding: 1em;
+    padding: 10vh 2em;
     background: rgba(0,0,0,0.9);
 		border-radius: 3px;
   }

@@ -8,12 +8,14 @@
 
 <style>
   footer {
+		position: relative;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 		padding: 12px;
 		border-top: 1px solid var(--color-border);
+		background-color: var(--color-bg-1);
 	}
 
 	footer a {

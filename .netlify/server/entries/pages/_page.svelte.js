@@ -15,34 +15,34 @@ const Hero = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Help_svelte_svelte_type_style_lang = "";
 const css = {
-  code: ".help.svelte-1az9c6l.svelte-1az9c6l{position:relative;z-index:10}.help-content.svelte-1az9c6l.svelte-1az9c6l{max-width:600px;margin:0 auto;padding:1em;background:rgba(0,0,0,0.9);border-radius:3px}@media only screen and (min-width: 800px){.help-content.svelte-1az9c6l.svelte-1az9c6l{padding:3em}}h2.svelte-1az9c6l.svelte-1az9c6l{font-weight:900;font-size:2em;margin:0 0 1em 0}span.svelte-1az9c6l.svelte-1az9c6l{display:inline-flex;justify-content:center;align-items:center;font-size:0.8em;width:2.4em;height:2.4em;background-color:var(--color-bg-2);box-sizing:border-box;border-radius:2px;border-width:2px;color:var(--color-text)}.missing.svelte-1az9c6l.svelte-1az9c6l{background:var(--color-bg-2);color:var(--color-text)}.close.svelte-1az9c6l.svelte-1az9c6l{border-style:solid;border-color:var(--color-theme-2)}.exact.svelte-1az9c6l.svelte-1az9c6l{background:var(--color-theme-2);color:white}.example.svelte-1az9c6l.svelte-1az9c6l{display:flex;justify-content:flex-start;margin:1rem 0;gap:0.2rem}.example.svelte-1az9c6l span.svelte-1az9c6l{font-size:1.4rem}p.svelte-1az9c6l span.svelte-1az9c6l{position:relative;border-width:1px;border-radius:1px;font-size:0.4em;transform:scale(2) translate(0, -10%);margin:0 1em}",
+  code: ".help.svelte-1cpylwt.svelte-1cpylwt{position:relative;z-index:10}.help-content.svelte-1cpylwt.svelte-1cpylwt{max-width:600px;margin:0 auto;padding:10vh 2em;background:rgba(0,0,0,0.9);border-radius:3px}@media only screen and (min-width: 800px){.help-content.svelte-1cpylwt.svelte-1cpylwt{padding:3em}}h2.svelte-1cpylwt.svelte-1cpylwt{font-weight:900;font-size:2em;margin:0 0 1em 0}span.svelte-1cpylwt.svelte-1cpylwt{display:inline-flex;justify-content:center;align-items:center;font-size:0.8em;width:2.4em;height:2.4em;background-color:var(--color-bg-2);box-sizing:border-box;border-radius:2px;border-width:2px;color:var(--color-text)}.missing.svelte-1cpylwt.svelte-1cpylwt{background:var(--color-bg-2);color:var(--color-text)}.close.svelte-1cpylwt.svelte-1cpylwt{border-style:solid;border-color:var(--color-theme-2)}.exact.svelte-1cpylwt.svelte-1cpylwt{background:var(--color-theme-2);color:white}.example.svelte-1cpylwt.svelte-1cpylwt{display:flex;justify-content:flex-start;margin:1rem 0;gap:0.2rem}.example.svelte-1cpylwt span.svelte-1cpylwt{font-size:1.4rem}p.svelte-1cpylwt span.svelte-1cpylwt{position:relative;border-width:1px;border-radius:1px;font-size:0.4em;transform:scale(2) translate(0, -10%);margin:0 1em}",
   map: null
 };
 const Help = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   $$result.css.add(css);
-  return `<section class="${"help svelte-1az9c6l"}" id="${"help"}"><div class="${"help-content svelte-1az9c6l"}"><h2 class="${"svelte-1az9c6l"}">How to play Jordle</h2>
+  return `<section class="${"help svelte-1cpylwt"}" id="${"help"}"><div class="${"help-content svelte-1cpylwt"}"><h2 class="${"svelte-1cpylwt"}">How to play Jordle</h2>
 
     <p>Jordle is a clone of Sverdle which is a clone of <a href="${"https://www.nytimes.com/games/wordle/index.html"}">Wordle</a>, the
       word guessing game. To play, enter a five-letter English word. For example:
     </p>
   
-    <div class="${"example svelte-1az9c6l"}"><span class="${"close svelte-1az9c6l"}">r</span>
-      <span class="${"missing svelte-1az9c6l"}">i</span>
-      <span class="${"close svelte-1az9c6l"}">t</span>
-      <span class="${"missing svelte-1az9c6l"}">z</span>
-      <span class="${"exact svelte-1az9c6l"}">y</span></div>
+    <div class="${"example svelte-1cpylwt"}"><span class="${"close svelte-1cpylwt"}">r</span>
+      <span class="${"missing svelte-1cpylwt"}">i</span>
+      <span class="${"close svelte-1cpylwt"}">t</span>
+      <span class="${"missing svelte-1cpylwt"}">z</span>
+      <span class="${"exact svelte-1cpylwt"}">y</span></div>
   
-    <p class="${"svelte-1az9c6l"}">The <span class="${"exact svelte-1az9c6l"}">y</span> is in the right place. <span class="${"close svelte-1az9c6l"}">r</span> and
-      <span class="${"close svelte-1az9c6l"}">t</span>
+    <p class="${"svelte-1cpylwt"}">The <span class="${"exact svelte-1cpylwt"}">y</span> is in the right place. <span class="${"close svelte-1cpylwt"}">r</span> and
+      <span class="${"close svelte-1cpylwt"}">t</span>
       are the right letters, but in the wrong place. The other letters are wrong, and can be discarded.
       Let&#39;s make another guess:
     </p>
   
-    <div class="${"example svelte-1az9c6l"}"><span class="${"exact svelte-1az9c6l"}">p</span>
-      <span class="${"exact svelte-1az9c6l"}">a</span>
-      <span class="${"exact svelte-1az9c6l"}">r</span>
-      <span class="${"exact svelte-1az9c6l"}">t</span>
-      <span class="${"exact svelte-1az9c6l"}">y</span></div>
+    <div class="${"example svelte-1cpylwt"}"><span class="${"exact svelte-1cpylwt"}">p</span>
+      <span class="${"exact svelte-1cpylwt"}">a</span>
+      <span class="${"exact svelte-1cpylwt"}">r</span>
+      <span class="${"exact svelte-1cpylwt"}">t</span>
+      <span class="${"exact svelte-1cpylwt"}">y</span></div>
   
     <p>This time we guessed right! You have <strong>six</strong> guesses to get the word.</p>
   

@@ -24,13 +24,13 @@ const Header = create_ssr_component(($$result, $$props, $$bindings, slots) => {
 });
 const Footer_svelte_svelte_type_style_lang = "";
 const css = {
-  code: "footer.svelte-1hojixs.svelte-1hojixs{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:12px;border-top:1px solid var(--color-border)}footer.svelte-1hojixs a.svelte-1hojixs{font-weight:bold}footer.svelte-1hojixs p.svelte-1hojixs{font-size:12px;letter-spacing:1px}@media(min-width: 480px){footer.svelte-1hojixs.svelte-1hojixs{padding:12px 0}}",
+  code: "footer.svelte-p17ot4.svelte-p17ot4{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:12px;border-top:1px solid var(--color-border);background-color:var(--color-bg-1)}footer.svelte-p17ot4 a.svelte-p17ot4{font-weight:bold}footer.svelte-p17ot4 p.svelte-p17ot4{font-size:12px;letter-spacing:1px}@media(min-width: 480px){footer.svelte-p17ot4.svelte-p17ot4{padding:12px 0}}",
   map: null
 };
 const Footer = create_ssr_component(($$result, $$props, $$bindings, slots) => {
   let year = new Date().getFullYear();
   $$result.css.add(css);
-  return `<footer class="${"svelte-1hojixs"}"><p class="${"svelte-1hojixs"}"><a href="${"/"}" class="${"svelte-1hojixs"}">JORDLE</a> ⓒ ${escape(year)}</p>
+  return `<footer class="${"svelte-p17ot4"}"><p class="${"svelte-p17ot4"}"><a href="${"/"}" class="${"svelte-p17ot4"}">JORDLE</a> ⓒ ${escape(year)}</p>
 </footer>`;
 });
 const styles = "";
