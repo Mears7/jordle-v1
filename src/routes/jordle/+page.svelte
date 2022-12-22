@@ -331,7 +331,7 @@
 	}
 
 	.keyboard button.missing {
-		opacity: 0.5;
+		opacity: 0.3;
 	}
 
 	.keyboard button.close {
@@ -364,7 +364,7 @@
 	}
 
 	.keyboard button[data-key='enter']:disabled {
-		opacity: 0.5;
+		opacity: 1;
 	}
 
 	.restart {

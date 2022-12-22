@@ -43,14 +43,14 @@
 </section>
 
 <style>
-  section.help {
+  .help {
     position: relative;
     z-index: 10;
 	}
 
   .help-content {
 		max-width: 600px;
-		margin: 10vh auto;
+		margin: 0 auto;
     padding: 1em;
     background: rgba(0,0,0,0.9);
 		border-radius: 3px;
