@@ -20,10 +20,10 @@
    }
 </script>
 
-<button class="button controls-finished" on:click={takeScreenshot}>Download screenshot</button>
+<button class="button" on:click={takeScreenshot}>Download screenshot</button>
 
 <style>
-  .controls-finished {
+  button {
     max-width: 250px;
   }
 </style>

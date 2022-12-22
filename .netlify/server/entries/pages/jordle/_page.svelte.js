@@ -4,7 +4,7 @@ import "devalue";
 import { r as readable } from "../../../chunks/index3.js";
 const Screenshot_svelte_svelte_type_style_lang = "";
 const css$1 = {
-  code: ".controls-finished.svelte-jvh7jz{max-width:250px}",
+  code: "button.svelte-2783jc{max-width:250px}",
   map: null
 };
 const Screenshot = create_ssr_component(($$result, $$props, $$bindings, slots) => {
@@ -26,7 +26,7 @@ const Screenshot = create_ssr_component(($$result, $$props, $$bindings, slots) =
   if ($$props.takeScreenshot === void 0 && $$bindings.takeScreenshot && takeScreenshot !== void 0)
     $$bindings.takeScreenshot(takeScreenshot);
   $$result.css.add(css$1);
-  return `<button class="${"button controls-finished svelte-jvh7jz"}">Download screenshot</button>`;
+  return `<button class="${"button svelte-2783jc"}">Download screenshot</button>`;
 });
 const get_initial_motion_preference = () => {
   return false;
