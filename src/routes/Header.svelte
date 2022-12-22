@@ -29,7 +29,7 @@
 	header {
 		display: flex;
 		justify-content: space-between;
-		position: fixed;
+		position: absolute;
 		top: 0;
 		width: 100%;
 		z-index: 100;

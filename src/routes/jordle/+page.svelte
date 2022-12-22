@@ -100,8 +100,6 @@
 		};
 	}}
 >
-	<a class="how-to-play" href="/#help">How to play</a>
-
 	<div id="capture" class="grid" class:playing={!won} class:bad-guess={form?.badGuess}>
 		{#each Array(6) as _, row}
 			{@const current = row === i}
@@ -139,7 +137,7 @@
 			{#if !won && data.answer}
 				<p>the answer was "{data.answer}"</p>
 			{/if}
-			<button data-key="enter" class="button" formaction="?/restart">
+			<button data-key="enter" class="button controls-finished" formaction="?/restart">
 				{won ? 'You won!' : `Game over.`} Play again?
 			</button>
 
@@ -180,6 +178,8 @@
 			</div>
 		{/if}
 	</div>
+
+	<a class="how-to-play" href="/#help">How to play</a>
 </form>
 
 {#if won}
@@ -209,11 +209,12 @@
 		justify-content: center;
 		gap: 1rem;
 		flex: 1;
+		margin-top: 3rem;
 	}
 
 	.how-to-play {
 		color: var(--color-text);
-		margin-bottom: 2em;
+		margin-top: 2em;
 	}
 
 	.how-to-play::before {
@@ -234,8 +235,7 @@
 	}
 
 	.grid {
-		--width: min(100vw, 40vh, 380px);
-		max-width: var(--width);
+		--width: min(100vw, 40vh, 420px);
 		align-self: center;
 		justify-self: center;
 		width: 100%;
@@ -250,6 +250,12 @@
 		grid-template-columns: repeat(5, 1fr);
 		grid-gap: 0.2rem;
 		margin: 0 0 0.2rem 0;
+	}
+
+	@media only screen and (min-width: 420px) {
+		.grid {
+			max-width: var(--width);
+		}
 	}
 
 	@media (prefers-reduced-motion: no-preference) {
@@ -304,7 +310,12 @@
 	.controls {
 		text-align: center;
 		justify-content: center;
-		height: min(18vh, 10rem);
+		height: min(20vh, 10rem);
+		width: 100%;
+	}
+
+	.controls-finished {
+		max-width: 250px;
 	}
 
 	.keyboard {
@@ -325,7 +336,7 @@
 
 	.keyboard button,
 	.keyboard button:disabled {
-		--size: min(8vw, 4vh, 40px);
+		--size: min(8vw, 8vh, 40px);
 		background-color: var(--color-bg-2);
 		color: var(--color-text);
 		width: var(--size);
@@ -348,9 +359,13 @@
 		border: 2px solid var(--color-theme-2);
 	}
 
+	.keyboard button:hover {
+		border: 2px solid var(--color-theme-1);
+	}
+
 	.keyboard button:focus {
 		background: var(--color-theme-1);
-		color: var(--color-text);
+		color: var(--color-bg-1);
 		outline: none;
 	}
 

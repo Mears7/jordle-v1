@@ -89,7 +89,7 @@ button:focus:not(:focus-visible) {
 
 .button:focus,
 .button:hover {
-	background: var(--color-theme-0);
+	background: var(--color-bg-1);
 	color: var(--color-theme-1);
 	outline: none;
 }
