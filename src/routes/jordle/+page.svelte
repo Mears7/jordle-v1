@@ -1,4 +1,6 @@
 <script>
+	
+	import Screenshot from './Screenshot.svelte';
 	import { confetti } from '@neoconfetti/svelte';
 	import { enhance } from '$app/forms';
 
@@ -100,7 +102,7 @@
 >
 	<a class="how-to-play" href="/#help">How to play</a>
 
-	<div class="grid" class:playing={!won} class:bad-guess={form?.badGuess}>
+	<div id="capture" class="grid" class:playing={!won} class:bad-guess={form?.badGuess}>
 		{#each Array(6) as _, row}
 			{@const current = row === i}
 			<h2 class="visually-hidden">Row {row + 1}</h2>
@@ -137,9 +139,12 @@
 			{#if !won && data.answer}
 				<p>the answer was "{data.answer}"</p>
 			{/if}
-			<button data-key="enter" class="restart selected" formaction="?/restart">
-				{won ? 'you won :)' : `game over :(`} play again?
+			<button data-key="enter" class="button" formaction="?/restart">
+				{won ? 'You won!' : `Game over.`} Play again?
 			</button>
+
+			<Screenshot />
+			
 		{:else}
 			<div class="keyboard">
 				<button data-key="enter" class:selected={submittable} disabled={!submittable}>enter</button>
@@ -191,6 +196,10 @@
 {/if}
 
 <style>
+	#capture {
+		background: var(--color-bg-1);
+	}
+
 	form {
 		width: 100%;
 		height: 100%;
@@ -204,6 +213,7 @@
 
 	.how-to-play {
 		color: var(--color-text);
+		margin-bottom: 2em;
 	}
 
 	.how-to-play::before {
@@ -365,22 +375,6 @@
 
 	.keyboard button[data-key='enter']:disabled {
 		opacity: 1;
-	}
-
-	.restart {
-		width: 100%;
-		padding: 1rem;
-		background: var(--color-theme-1);
-		border-radius: 2px;
-		border: 2px solid var(--color-theme-1);
-		cursor: pointer;
-	}
-
-	.restart:focus,
-	.restart:hover {
-		background: var(--color-theme-0);
-		color: var(--color-theme-1);
-		outline: none;
 	}
 
 	@keyframes wiggle {

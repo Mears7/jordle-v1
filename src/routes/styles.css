@@ -77,6 +77,23 @@ button:focus:not(:focus-visible) {
 	outline: none;
 }
 
+.button {
+	width: 100%;
+	padding: 1rem;
+	background: var(--color-theme-1);
+	border-radius: 2px;
+	border: 2px solid var(--color-theme-1);
+	cursor: pointer;
+	margin-top: 0.5rem;
+}
+
+.button:focus,
+.button:hover {
+	background: var(--color-theme-0);
+	color: var(--color-theme-1);
+	outline: none;
+}
+
 @media (min-width: 720px) {
 	h1 {
 		font-size: 2.4rem;
